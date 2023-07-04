@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap");
+
+* {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#first-section {
+  width: 80%;
+  margin: auto;
+}
+
+.first-section {
+  position: relative;
+  background: url(./images/desktop/image-hero.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 450px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.main-text {
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  width: 600px;
+  font-weight: 100;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 30px;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 34%;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+nav a {
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:focus,
+#footer-links a:focus,
+.social-media img:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+}
+
+.second-section {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 110px;
+}
+
+#caption {
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.second-section-caption {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  left: 53%;
+  top: -20.2rem;
+  width: 520px;
+  padding: 90px 0px 0px 82px;
+  background: #fff;
+}
+
+.vr-pic {
+  width: 70%;
+}
+
+.ssc {
+  font-size: 42px;
+  font-weight: 100;
+}
+
+.ssc2 {
+  color: hsl(0, 0%, 55%);
+  font-weight: 600;
+  margin-top: 37px;
+  line-height: 22px;
+}
+
+#see-all-btn {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+}
+
+#see-all-mobile-btn {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px 40px;
+  display: grid;
+  justify-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+#see-all-mobile-btn:hover,
+#see-all-btn:hover {
+  background: black;
+  color: #fff;
+}
+
+.footer {
+  padding: 40px 0px;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+}
+
+.our-creations {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.our-creations-pic {
+  position: relative;
+}
+
+.our-creations-mobile-pic {
+  position: relative;
+}
+
+.our-creations-pics-caption {
+  position: absolute;
+  top: 12em;
+  left: 1em;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  padding-right: 60px;
+}
+
+.our-creations-mobile-pic:hover,
+.our-creations-pic:hover {
+  opacity: 70%;
+}
+
+.our-creations-pics-caption:hover,
+.our-creations-mobile-pics-caption:hover {
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+}
+
+.our-creations-mobile-pics-caption {
+  position: absolute;
+  top: -2.4em;
+  left: 0.5em;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  width: 150px;
+}
+
+#grid {
+  padding-right: 94px;
+}
+
+#grid-mobile {
+  width: 110px;
+}
+
+#footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    place-content: center;
+    position: relative;
+  }
+
+  .creations-sec {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .second-section-caption {
+    left: 34rem;
+  }
+
+  .vr-pic {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .our-creations {
+    gap: 10px;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+  }
+
+  .second-section-caption {
+    left: 23rem;
+    width: 450px;
+    top: -17.1rem;
+    padding: 60px 0px 0px 52px;
+  }
+
+  .vr-pic {
+    width: 65%;
+  }
+  .ssc {
+    font-size: 32px;
+    font-weight: 100;
+  }
+  .ssc2 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .responsive_nav {
+    transform: none;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .responsive_nav a {
+    font-size: 32px;
+  }
+
+  .nav-hamb-close img {
+    position: absolute;
+    top: 6.5%;
+    left: 88%;
+  }
+
+  .our-creations {
+    gap: 10px;
+    justify-items: center;
+    grid-template-columns: auto auto;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    display: none;
+  }
+
+  .nav {
+    padding-top: 25px;
+  }
+
+  .nav-hamb {
+    margin-top: 10px;
+  }
+
+  .first-section {
+    position: relative;
+    background: url(./images/mobile/image-hero.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .main-text {
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    width: 500px;
+    font-weight: 100;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 30px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 35%;
+  }
+
+  .footer {
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+  #footer-links {
+    flex-direction: column;
+  }
+
+  .social-media {
+    position: relative;
+    left: 2.5rem;
+  }
+
+  .second-section-caption {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    margin: 20px 0px;
+    margin-bottom: 80px;
+    text-align: center;
+    position: static;
+  }
+
+  .vr-pic {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .our-creations {
+    display: none;
+  }
+
+  #see-all-btn {
+    display: none;
+  }
+
+  #caption {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 100;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .ssc {
+    font-size: 28px;
+  }
+
+  .our-creations-mobile-pics {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main-text {
+    font-size: 36px;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 671px) {
+  .our-creations-mobile {
+    display: none;
+  }
+  .our-creations-pics {
+    width: 100%;
+  }
+  #see-all-mobile-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .social-media {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .nav-hamb {
+    display: none;
+  }
+}
